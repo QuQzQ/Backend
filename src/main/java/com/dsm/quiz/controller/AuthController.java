@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class AuthController {
 
     @RequestMapping("/auth")
-    public void join(UserRe user){
+    public void join(UserRequest user){
 
 
     }
