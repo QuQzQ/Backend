@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT $JAVA_OPTS -jar gradle/wrapper/*.jar
+web: java -Dserver.port=$PORT $JAVA_OPTS -jar build/libs/quiz-0.0.1-SNAPSHOT.jar
