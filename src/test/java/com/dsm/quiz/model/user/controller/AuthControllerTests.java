@@ -12,9 +12,41 @@ public class AuthControllerTests {
     @DisplayName("[POST] /auth - 회원가입 성공")
     void successfullyCreateUser(){
             given()
-                    .body(UserCreateRequestDto.builder().build())
+                    .body(UserCreateRequestDto.builder()
+                            .email("test@naver.com")
+                            .password("testPassword")
+                            .nickname("nick")
+                            .build())
             .when().post("/auth")
             .then()
                     .statusCode(201);
+    }
+
+    @DisplayName("[POST] /auth - 회원가입 실패: 이메일 중복")
+    @Test
+    void failedCreateUserDuplicatedEmail(){
+        given()
+                .body(UserCreateRequestDto.builder()
+                        .email("test@naver.com")
+                        .password("testPassword")
+                        .nickname("nick")
+                        .build())
+        .when().post("/auth")
+        .then()
+                .statusCode(409);
+    }
+
+    @DisplayName("[POST] /auth - 회원가입 실패: 닉네임 중복복")
+    @Test
+    void failedCreateUserDuplicatedNickname(){
+        given()
+                .body(UserCreateRequestDto.builder()
+                        .email("test@naver.com")
+                        .password("testPassword")
+                        .nickname("nick")
+                        .build())
+                .when().post("/auth")
+                .then()
+                .statusCode(409);
     }
 }
