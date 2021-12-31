@@ -30,6 +30,12 @@ dependencies {
 	implementation group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
 	implementation group: 'io.swagger', name: 'swagger-annotations', version: '1.6.2'
 	implementation group: 'io.swagger', name: 'swagger-models', version: '1.6.2'
+
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	testImplementation 'org.springframework.security:spring-security-test'
+	testImplementation 'io.rest-assured:rest-assured'
+	testImplementation 'io.rest-assured:json-path:4.1.1'
+	testImplementation 'io.rest-assured:json-schema-validator:4.1.1'
 }
 
 test {
