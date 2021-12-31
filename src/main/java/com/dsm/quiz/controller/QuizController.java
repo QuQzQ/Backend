@@ -1,7 +1,7 @@
 package com.dsm.quiz.controller;
 
 import com.dsm.quiz.payload.response.*;
-import com.dsm.quiz.service.*;
+import com.dsm.quiz.model.quiz.service.*;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;

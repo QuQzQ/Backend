@@ -1,8 +1,8 @@
-package com.dsm.quiz.service;
+package com.dsm.quiz.model.quiz.service;
 
-import com.dsm.quiz.entity.Quiz;
-import com.dsm.quiz.payload.response.*;
-import com.dsm.quiz.repository.QuizRepository;
+import com.dsm.quiz.model.quiz.Quiz;
+import com.dsm.quiz.model.quiz.dto.QuizResponse;
+import com.dsm.quiz.model.quiz.repository.QuizRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
