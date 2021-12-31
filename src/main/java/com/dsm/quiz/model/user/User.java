@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.util.List;
 
+@Table(name = "user")
 @Getter
 @Builder
 @Entity
@@ -22,9 +23,13 @@ public class User {
     private String nickname;
     private String introduction;
     private String title;
-    @OneToMany
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
     private List<Quiz> quizzes;
     private int point;
     @Embedded
+    @AttributeOverride(name = "tryQuizCount",
+            column = @Column(name = "try_quiz_count"))
+    @AttributeOverride(name = "solveQuizCount",
+            column =  @Column(name = "solve_quiz_count"))
     private QuizCount quizCount;
 }
