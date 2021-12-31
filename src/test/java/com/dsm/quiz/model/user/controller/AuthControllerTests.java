@@ -2,10 +2,12 @@ package com.dsm.quiz.model.user.controller;
 import com.dsm.quiz.model.user.dto.UserCreateRequestDto;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import static io.restassured.RestAssured.*;
 
 
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class AuthControllerTests {
 
     @Test
