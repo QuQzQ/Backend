@@ -19,6 +19,7 @@ public class Quiz {
     private String content;
     private int answer;
     @ManyToOne
+    @JoinColumn(name = "email")
     private User user;
     // 정답률
 
