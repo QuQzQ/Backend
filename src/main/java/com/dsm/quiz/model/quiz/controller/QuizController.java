@@ -1,7 +1,7 @@
-package com.dsm.quiz.controller;
+package com.dsm.quiz.model.quiz.controller;
 
-import com.dsm.quiz.payload.response.*;
-import com.dsm.quiz.model.quiz.service.*;
+import com.dsm.quiz.model.quiz.dto.QuizResponse;
+import com.dsm.quiz.model.quiz.service.QuizService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -35,6 +35,11 @@ public class QuizController {
 
     @ApiOperation("Point를 더하거나 빼주는 API")
    public void point(){
+
+    }
+
+    // 퀴즈 생성
+    public void quizCreate(){
 
     }
 }

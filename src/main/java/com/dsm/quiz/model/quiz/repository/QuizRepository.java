@@ -1,6 +1,6 @@
-package com.dsm.quiz.repository;
+package com.dsm.quiz.model.quiz.repository;
 
-import com.dsm.quiz.entity.*;
+import com.dsm.quiz.model.quiz.Quiz;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 

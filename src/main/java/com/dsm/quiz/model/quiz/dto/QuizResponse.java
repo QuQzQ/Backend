@@ -1,4 +1,4 @@
-package com.dsm.quiz.payload.response;
+package com.dsm.quiz.model.quiz.dto;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Builder;
