@@ -1,4 +1,4 @@
-package com.dsm.quiz.exception;
+package com.dsm.quiz.global.exception;
 
 public class UserNicknameAlreadyException extends BasicException{
     public UserNicknameAlreadyException() {

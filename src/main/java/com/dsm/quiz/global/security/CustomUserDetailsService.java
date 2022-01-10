@@ -1,6 +1,6 @@
 package com.dsm.quiz.global.security;
 
-import com.dsm.quiz.exception.UserNotFoundException;
+import com.dsm.quiz.global.exception.UserNotFoundException;
 import com.dsm.quiz.model.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.*;

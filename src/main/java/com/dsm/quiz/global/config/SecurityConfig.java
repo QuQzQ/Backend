@@ -1,4 +1,4 @@
-package com.dsm.quiz.config;
+package com.dsm.quiz.global.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

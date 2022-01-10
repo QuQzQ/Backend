@@ -1,4 +1,4 @@
-package com.dsm.quiz.exception;
+package com.dsm.quiz.global.exception;
 
 public class UserNotFoundException extends BasicException{
     public UserNotFoundException() {

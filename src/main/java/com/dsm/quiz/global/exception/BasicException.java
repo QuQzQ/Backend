@@ -1,4 +1,4 @@
-package com.dsm.quiz.exception;
+package com.dsm.quiz.global.exception;
 
 import lombok.Getter;
 
