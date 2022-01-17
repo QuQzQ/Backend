@@ -20,6 +20,7 @@ public class User {
     @Id
     private String email;
     private String password;
+    @Column(unique = true, length = 10)
     private String nickname;
     private String introduction;
     private String title;
