@@ -1,11 +1,11 @@
-package com.quiz.QQ
+package com.quiz.qq
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class QqApplication
+class QuizApplication
 
 fun main(args: Array<String>) {
-	runApplication<QqApplication>(*args)
+	runApplication<QuizApplication>(*args)
 }

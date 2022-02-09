@@ -1,10 +1,10 @@
-package com.quiz.QQ
+package com.quiz.qq
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class QqApplicationTests {
+class QuizApplicationTests {
 
 	@Test
 	fun contextLoads() {
